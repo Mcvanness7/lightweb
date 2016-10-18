@@ -1,0 +1,121 @@
+<ion-view title="每日精选" hide-nav-bar="true">
+    <ion-header-bar class="item-input-inset bar-assertive ">
+            <div class="item-input-wrapper up">
+                <i class="icon ion-search placeholder-icon" style="margin-top:3px;color:#fff"></i>
+                <input type="search" placeholder="请输入搜索关键字" style="font-family:'微软雅黑';font-size:12px;color:#fff"/>
+            </div>
+            <button class="button button-icon ion-navicon"></button>
+
+    </ion-header-bar>
+    <ion-content>
+       <ion-slide-box auto-play="true" does-continue="true" slide-interval="3000" show-pager="false">
+           <ion-slide>
+                <a href="#" class="box"><img src="views/search/images/img02.jpg"/></a>
+           </ion-slide>
+           <ion-slide>
+               <a href="#" class="box"><img src="views/search/images/img03.jpg"/></a>
+           </ion-slide>
+           <ion-slide>
+               <a href="#" class="box"><img src="views/search/images/img04.jpg"/></a>
+           </ion-slide>
+           <ion-slide>
+               <a href="#" class="box"><img src="views/search/images/img05.jpg"/></a>
+           </ion-slide>
+           <ion-slide>
+               <a href="#" class="box"><img src="views/search/images/img07.jpg"/></a>
+           </ion-slide>
+           <ion-slide>
+               <a href="#" class="box"><img src="views/search/images/img00.jpg"/></a>
+           </ion-slide>
+       </ion-slide-box>
+
+        <div class="warp">
+            <div class="shadow"></div>
+            <button class="button button-clear btn1 clear" style="color:#000;font-family:'黑体';font-size:14px;">热门话题<span style="color:#ccc;font-size:14px">.hot topics</span></button>
+            <button class="button button-clear btn2 clear" style="color:#9d9d9d;font-family:'黑体';font-size:14px;" ng-click="toMore()">查看更多 ></button>
+            <div class="row clear">
+                <div class="col star clear">
+                    <div class="imglix"><img src="views/search/images/11_03.jpg" /></div>颜控圣诞必入
+                </div>
+                <div class="col star clear">
+                    <div class="imglix"><img src="views/search/images/11_05.jpg" /></div>新生儿礼物
+                </div>
+                <div class="col star clear">
+                    <div class="imglix"><img src="views/search/images/22_05.jpg" /></div>平价IT bag
+                </div>
+
+            </div>
+        </div>
+        <div class="warp">
+            <div class="shadow"></div>
+            <button class="button button-clear btn1 clear" style="color:#000;font-family:'黑体';font-size:14px;">品质生活<span style="color:#ccc;font-size:14px">.life styles</span></button>
+            <button class="button button-clear btn2 clear" style="color:#9d9d9d;font-family:'黑体';font-size:14px;"  ng-click="toMore()">查看更多 ></button>
+            <div class="row clear">
+                <div class="col star clear">
+                    <button class="imglix2"><img src="views/search/images/333_05.jpg" /></button>
+                </div>
+                <div class="col star clear">
+                    <button class="imglix2"><img src="views/search/images/333_03.jpg" /></button>
+                </div>
+                <div class="col star clear">
+                    <button class="imglix2"><img src="views/search/images/1_03.jpg" /></button>
+                </div>
+            </div>
+        </div>
+        <div class="warp">
+            <div class="shadow"></div>
+            <button class="button button-clear btn1 clear" style="color:#000;font-family:'黑体';font-size:14px;">全球购物<span style="color:#ccc;font-size:14px">.destinations</span></button>
+            <button class="button button-clear btn2 clear" style="color:#9d9d9d;font-family:'黑体';font-size:14px;"  ng-click="toMore()">查看更多 ></button>
+            <div class="row clear">
+                <div class="col star clear">
+                    <button class="imglix2"><img src="views/search/images/333_10.jpg" /></button>
+                </div>
+                <div class="col star clear">
+                    <button class="imglix2"><img src="views/search/images/333_13.jpg" /></button>
+                </div>
+                <div class="col star clear">
+                    <button class="imglix2"><img src="views/search/images/1_07.jpg" /></button>
+                </div>
+            </div>
+        </div>
+        <div class="warp">
+            <div class="shadow"></div>
+            <button class="button button-clear btn1 btn3 clear" style="color:#000;font-family:'黑体';font-size:14px;">热门专辑<span style="color:#ccc;font-size:14px">.selected boards</span></button>
+            <div class="list card" ng-repeat="rush in data">
+                <div class="item">
+                    <p style="color:#000">{{rush.text}}</p>
+                    <p style="color:#999">笔记▪{{rush.note}} 粉丝▪{{rush.fan}}</p>
+                </div>
+                <div class="item alisa">
+                    <ion-scroll direction="x">
+                        <div class="row">
+                            <div class="col ">
+                                <div class="five"><img src="{{rush.life[0].no1}}" /></div>
+                            </div>
+                            <div class="col ">
+                                <div class="five"><img src="{{rush.life[1].no2}}" /></div>
+                            </div>
+                            <div class="col ">
+                                <div class="five"><img src="{{rush.life[2].no3}}" /></div>
+                            </div>
+                            <div class="col ">
+                                <div class="five"><img src="{{rush.life[3].no4}}" /></div>
+                            </div>
+                            <div class="col ">
+                                <div class="five"><img src="{{rush.life[2].no3}}" /></div>
+                            </div>
+                        </div>
+                    </ion-scroll>
+                </div>
+                <div class="item item-avatar-left">
+                    <img src="{{rush.head}}" />
+                    <p>由<span style="font-weight: bolder">{{rush.found}}</span>创建</p>
+                    <p>{{rush.date}}</p>
+                </div>
+                <!--<ion-infinite-scroll distance="1%" immediate-check="false" on-infinite="loadMore() " ng-if="total>page">-->
+
+                <!--</ion-infinite-scroll>-->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

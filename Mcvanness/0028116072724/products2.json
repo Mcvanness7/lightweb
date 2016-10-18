@@ -1,0 +1,32 @@
+[
+
+  {
+
+    "leftImg":"views/home/images/001.jpg",
+    "introduce1":"🏠民宿坐落在半山腰上🍃。很原始的地方，丛林中一条窄窄的小路，途中还遇到窜出来的野兔",
+    "person1":"小露露",
+
+    "rightImg":"views/home/images/005.jpg",
+    "introduce2":"从阿维尼翁坐火车🚄大概20分钟就到阿尔勒了——(一座打上梵高印记的法国南部古城) ",
+    "person2":"iris"
+  },
+  {
+    "leftImg":"views/home/images/004.jpg",
+    "introduce1":"如果有机会去奈良，东大寺是一定要去的。因为那里有超可爱的鹿群。奈良有日本三大神社之一的春日大社，",
+    "person1":"itach",
+
+    "rightImg":"views/home/images/003.jpg",
+    "introduce2":"2014年被奢華網站Virtuoso評為世界各地最佳酒店之一。這個酒店離阿布扎比機場大概2個半小時左右🙄那天到阿布扎比 ",
+    "person2":"蒙太奇"
+
+  },
+  {
+    "leftImg":"views/home/images/006.jpg",
+    "introduce1":"可以看海景的咖啡厅 环境超棒 面积也很大 喝喝咖啡 看看海景 看看杂志 一天就过去了[害羞]",
+    "person1":"Christina",
+
+    "rightImg":"views/home/images/007.jpg",
+    "introduce2":"厌倦了周末不是逛街，看电影，就是吃吃喝喝。直到今天去了新天地的一家名叫洗衣船的画室，觉得格外温馨有趣。 🎨画室开在新天地（太仓路58号）",
+    "person2":"囧啊囧"
+  }
+]

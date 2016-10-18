@@ -1,0 +1,23 @@
+angular.module("applist").controller('homeCtrl',function($scope,$http,dataFactory2,$state){
+    $scope.data3=[];
+    $scope.page=0;
+    $scope.total=1;
+    $scope.loMore=function(){
+        $http.get("views/home/home.json").success(function(banner){
+            $scope.page++;
+            angular.forEach(banner,function(page){
+                $scope.data3.push(page)
+            })
+            $scope.total=20;
+        }).finally(function(){
+            $scope.$broadcast("scroll.infiniteScrollComplete")
+        })
+    }
+    $scope.loMore();
+    $scope.data=dataFactory2.query();
+    $scope.toDetail=function(product){
+        $state.go("tabs.journey",{title:product});
+        //$ionicViewSwitcher.nextDirection("forward");
+    }
+    $scope.index=false;
+})

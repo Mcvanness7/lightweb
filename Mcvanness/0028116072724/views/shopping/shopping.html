@@ -1,0 +1,26 @@
+<ion-view title="大牌精选">
+    <ion-content>
+        <div class="list kiss" ng-repeat="pash in data2">
+            <div class="item">
+                <a ><img src="{{pash.bigPic[0].no1}}" /></a>
+            </div>
+            <div class="item imgspe">
+                <a ><img src="{{pash.bigPic[1].no2}}" /></a>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a  class="glass" ng-click="toDetail(pash.smallPic[0].title)"><img src="{{pash.smallPic[0].num1}}" /></a>{{pash.smallPic[0].title}}<br /><span style="color:red">{{pash.smallPic[0].price}}</span>
+                </div>
+                <div class="col">
+                    <a  class="glass" ng-click="toDetail(pash.smallPic[1].title)"><img src="{{pash.smallPic[1].num2}}" /></a>{{pash.smallPic[1].title}}<br /><span style="color:red">{{pash.smallPic[1].price}}</span>
+                </div>
+                <div class="col">
+                    <a  class="glass" ng-click="toDetail(pash.smallPic[2].title)"> <img src="{{pash.smallPic[2].num3}}" /></a>{{pash.smallPic[2].title}}<br /><span style="color:red">{{pash.smallPic[2].price}}</span>
+                </div>
+            </div>
+            <!--<ion-infinite-scroll ng-if="total>page" immediate-check="false" on-infinite="loMore()">-->
+
+            <!--</ion-infinite-scroll>-->
+        </div>
+    </ion-content>
+</ion-view>

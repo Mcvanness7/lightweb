@@ -1,0 +1,47 @@
+<ion-view title="消息">
+    <ion-content>
+        <div class="list">
+            <div class="item item-icon-right small">
+                <p style="margin-top:-7px">发现更多好友</p>
+                <i class="icon ion-android-close" style="font-size:10px"></i>
+            </div>
+            <div class="item second">
+                <p class="pp" style="float:left">看看大家都在怎么使用小用书</p>
+                <a class="aa">立即前往</a>
+            </div>
+            <div class="shadow2"></div>
+        </div>
+        <div class="list"  ng-repeat="push in data4" >
+                <div class="item" style="border:none">
+                    <p style="color:#000">{{push.date}}</p>
+                </div>
+            <div class="item item-avatar-left" style="border:none" >
+                <img src="{{push.girhed}}" />
+                <p>你关注的"<span style="font-weight:bolder">{{push.type}}</span>"标签下新增了12篇笔记</p>
+                <div class="item alisa slisa">
+                    <div class="row">
+                        <div class="col">
+                            <div ><img src="{{push.focus[0].no1}}" /></div>
+                        </div>
+                        <div class="col">
+                            <div ><img src="{{push.focus[1].no2}}" /></div>
+                        </div>
+                        <div class="col">
+                            <div ><img src="{{push.focus[2].no3}}" /></div>
+                        </div>
+                        <div class="col">
+                            <div ><img src="{{push.focus[3].no4}}" /></div>
+                        </div>
+                        <div class="col">
+                            <div ><img src="{{push.focus[0].no1}}" /></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="shadow2" ></div>
+       </div>
+        <!--<ion-infinite-scroll ng-if="total>page" immediate-check="false" on-infinite="loMore()">-->
+        <!--</ion-infinite-scroll>-->
+    </ion-content>
+</ion-view>

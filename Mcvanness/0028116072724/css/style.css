@@ -1,0 +1,47 @@
+*{margin:0;padding:0;font-family:"黑体"}
+.clear:after{content:"200B";display:block;font-size:0;height:0;clear:both;}
+.clear{*zoom:1;}
+
+button{border:none}
+.box img{width:100%;height:100%;display: block}
+.btn1{height:105px;color:#000;padding-left:10px;font-family:'黑体';float:left}
+.btn2{height:105px;color:#ccc;padding-right:10px;font-family:'黑体';float:right}
+.shadow{height:15px;background:#cfcec9;opacity: 0.3}
+.star{padding-left:10px;text-align:center}
+.imglix{display:block;overflow: hidden;text-align:center;margin-bottom:5px;}
+.imglix img{border-radius: 4px;}
+.imglix2 img{border-radius: 4px;}
+.star img{display: block;width:100%;height: 100%; border-radius: 4px;}
+.imglix2{display:block;overflow: hidden;text-align:center;margin-bottom:5px;}
+.btn3{float:none}
+.imgspe{padding-top:20px;}
+
+.five img{border-radius: 4px}
+.glass{width:160px;height:150px;overflow: hidden}
+.glass img{width:100%;height: 100%;}
+.kiss img{width:100%;height:100%;}
+.alisa img{width:100%;height:100%}
+.fivestar{text-indent: 1em}
+.price{text-indent: 1em;color:red;font-size: 16px;font-weight: bolder}
+.love{margin-left:-10px;}
+.redboox1{float:left}
+.redboox2{float:right}
+.juggle{border:none;font-size:13px}
+.left{width:49%;float:left;}
+.right{width:49%;float:right;}
+.little{line-height:14px;height:14px;min-height:30px}
+.small{line-height:16px;height:16px}
+.second{line-height:16px;height:16px;border:none;margin-top:-10px;font-size:12px}
+.aa{font-size:8px;width:50px;height:22px;background:red;color:#fff;display: block;float:right;border-radius:2px;text-align:center}
+.shadow2{width:100%;height:10px;background:#cfcec9;opacity: 0.3;margin-top:9px}
+.slisa{border:none;margin-left:-26px;}
+.slisa img{border-radius: 9px}
+
+.wait{float:left;font-size:40px;text-align:center;width:25%}
+.beauty img{width:100%;height:100%}
+.slider {height:100%}
+.up{background:#C62121}
+.ac{color:red}
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}

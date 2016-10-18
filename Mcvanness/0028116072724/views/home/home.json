@@ -1,0 +1,40 @@
+
+
+[
+    {
+        "left":[
+            {"Img":"views/home/images/001.jpg"},
+            {"title":"🏠民宿坐落在半山腰上🍃。很原始的地方，丛林中一条窄窄的小路，途中还遇到窜出来的野兔"},
+            {"person":"小露露"}
+        ],
+        "right":[
+            {"Img":"views/home/images/005.jpg"},
+            {"title":"从阿维尼翁坐火车🚄大概20分钟就到阿尔勒了——(一座打上梵高印记的法国南部古城) "},
+            {"person":"iris"}
+        ]
+    },
+    {
+        "left":[
+            {"Img":"views/home/images/004.jpg"},
+            {"title":"?如果有机会去奈良，东大寺是一定要去的。因为那里有超可爱的鹿群。奈良有日本三大神社之一的春日大社，"},
+            {"person":"囧啊莫"}
+        ],
+        "right":[
+            {"Img":"views/home/images/003.jpg"},
+            {"title":"2014年被奢華網站Virtuoso評為世界各地最佳酒店之一。這個酒店離阿布扎比機場大概2個半小時左右🙄那天到阿布扎比 "},
+            {"person":"christina"}
+        ]
+    },
+    {
+        "left":[
+            {"Img":"views/home/images/006.jpg"},
+            {"title":"可以看海景的咖啡厅 环境超棒 面积也很大 喝喝咖啡 看看海景 看看杂志 一天就过去了[害羞]"},
+            {"person":"薇琳"}
+        ],
+        "right":[
+            {"Img":"views/home/images/007.jpg"},
+            {"title":"厌倦了周末不是逛街，看电影，就是吃吃喝喝。直到今天去了新天地的一家名叫洗衣船的画室，觉得格外温馨有趣。 🎨画室开在新天地（太仓路58号）"},
+            {"person":"tiffiny"}
+        ]
+    }
+]
